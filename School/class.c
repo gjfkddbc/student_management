@@ -16,10 +16,10 @@ int name_count = 0;
 char name_check[101] = { 0 };
 int id_make[10] = { 0 };
 double id_check = 0;
-int a; //scanf,getchar °ªÀ» ¹İÈ¯ÇÏ±â À§ÇØ »ç¿ë
-//C 6262(½ºÅÃ»çÀÌÁî ÃÊ°ú)¸¦ ÇØ°áÇÏ±â À§ÇØ Àü¿ª º¯¼ö·Î ¼±¾ğ
+int a; //scanf,getchar ê°’ì„ ë°˜í™˜í•˜ê¸° ìœ„í•´ ì‚¬ìš©
+//C 6262(ìŠ¤íƒì‚¬ì´ì¦ˆ ì´ˆê³¼)ë¥¼ í•´ê²°í•˜ê¸° ìœ„í•´ ì „ì—­ ë³€ìˆ˜ë¡œ ì„ ì–¸
 
-//scanf µÚ getchar´Â ³²¾ÆÀÖ´Â ¹öÆÛ¸¦ Á¦°ÅÇÏ±âÀ§ÇØ »ç¿ëÇÔ
+//scanf ë’¤ getcharëŠ” ë‚¨ì•„ìˆëŠ” ë²„í¼ë¥¼ ì œê±°í•˜ê¸°ìœ„í•´ ì‚¬ìš©í•¨
 int main() {
     srand((unsigned int)time(NULL));
 
@@ -161,6 +161,7 @@ int main() {
 
             a = scanf("%s", &answer);
             a = getchar();
+            printf("\n");
 
             if (answer == 'y') {
                 mode = 'r';
@@ -186,7 +187,7 @@ int main() {
 
             for (int i = 0; i < 101; i++) {
                 if (number_answer == id[i]) {
-                    printf("%s's point is %s\n\n", name[i], book[i]);
+                    printf("%s borrows %s\n\n", name[i], book[i]);
                     goto End;
                 }
             }
