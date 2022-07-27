@@ -164,7 +164,7 @@ int main() {
             printf("\n");
 
             if (answer == 'y') {
-                mode = 'r';
+                mode = 'a';
             }
             else if (answer == 'n')
             {
